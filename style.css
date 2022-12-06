@@ -67,6 +67,8 @@ footer {
 }
 
 #menu {
+  display: flex;
+
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -90,9 +92,36 @@ a + a {
   margin-left: 4.2rem;
 }
 
-#wave img {
+#wave {
   position: fixed;
+  top: 78.2rem;
   width: 100%;
-  top: 74.2rem;
-  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+@media (max-width: 1400px) {
+  #wave {
+    position: fixed;
+    top: 74.2rem;
+    height: 16rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    width: 36.6rem;
+  }
+
+  #wave {
+    position: relative;
+    top: 8rem;
+    height: 16rem;
+    width: 100%;
+  }
+
+  p,
+  h1 {
+    margin-left: 0;
+    padding-inline: 20px;
+  }
 }
